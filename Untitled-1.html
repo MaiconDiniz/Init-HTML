@@ -1,0 +1,222 @@
+<!--    
+ Comentarios iniciais: 
+HTML - Acronimo para hypertext markup language 
+Acronimo - palavra formada pela inicial ou por mais de uma letra
+HTML - não é uma linguagem de programação e sim uma linguagem de marcação textual
+HTML - linguagem de marcação de texto com acesso a links, videos e imagens. (Algo mais rico em informações adicionais)
+
+-->
+
+<!--
+    Anatomia das tags
+    - Abertura de tag
+    - Fechamento de tag
+    - Conteúdo
+    - Elementos 
+
+    (Conteudo inicial)
+-->
+<!-- H1 = Marcação/Abertura de tag 
+ Markup = " O título"
+<h1>
+    O título 
+</h1>
+-->
+<!-- Elementos Vazios -->
+<!-- Atributos HTML = src/alt/type 
+<img src="" alt=""> 
+<input type="text"> são informações extras e configurações 
+<img src="conteudo" alt=""> -->
+
+<!-- Atributos booleanos = não necessitam de conteúdo 
+<input type="text" disabled> -->
+<!-- Nesse caso o disabled é um atributo booleano porque ele não precisa de um conteudo, ou seja, nao necessita do (atributo)=""-->
+<!-- Aspas
+        - Omissão de aspas (quando nao se coloca as aspas)
+        - simples (aspas simples) 
+        - duplas (aspas padrão recomendado)
+-->
+
+<!-- IMPORTANTE:
+    
+    Atributos Globais mais utilizados
+    - class
+    - contenteditable
+    - data-*
+    - hidden
+    - id
+    - style
+    - tabindex
+    - title
+
+    Atributos Globais sao aplicados em todas as tags
+    nao repetir o id pois se caso precisar no futuro pode dar problema entao é melhor só fazer com nomes diferentes
+
+<div class="carrinho" contenteditable="true" id="cart1">
+
+ablalalal
+
+</div>
+
+<div class="carrinho" data-id="" id="cart2" style="color:aqua" >
+
+ablalalla
+
+</div>
+
+<div class="carrinho" hidden>
+
+sim
+
+</div>
+
+<div class="carrinho">
+
+ablalalal
+
+</div>
+
+tabindex:
+
+<div tabindex="3">
+    conteudo
+</div>
+
+<div tabindex="1">
+    conteudo
+</div>
+
+<div tabindex="2">
+    conteudo
+</div>
+
+title: (ao passar o mouse em cima da tag ele mostra o "Definir um titulo")
+<div title="Definir um titulo">
+    conteudo
+</div>
+
+<div >
+    conteudo
+</div>
+
+<div >
+    conteudo
+</div>
+-->
+<!-- Alinhamento de tags 
+
+O p nao pode ser fechado no meio da tag em
+ Hierarquia = em é a tag filha da tag pai p
+
+
+<p>
+    Vou <em>escrever</em> um paragrafo
+</p>
+
+<p>Esse é um novo paragrafo</p> -->
+<!-- nesse caso coloquei a tag div, entao o p é a tag filha do div(tag pai)
+<div>
+    <p>
+        Vou <em>escrever</em> um paragrafo
+    </p>
+    </div>
+-->
+<!-- quebra de linhas 
+    Posicionamento dos elementos
+    algumas tags nao iram quebrar a linha(em) 
+    ja outras iram(p)
+    a tag br é break, ou seja, quebra de linha
+
+
+<p>
+    
+    Esse é um texto
+    <p>Aqui outro texto</p>
+</p>
+-->
+
+<!--
+        Pratica:
+        Escrever 2 paragrafos, dando enfase e 
+        importancia para algumas palavras, e adicione um link de saiba mais.
+
+        - use a tag em para enfase
+        - use a tag strong para importancia
+        - o link pode levar para o google.
+
+<h1> 
+    
+    Titulo inicial
+
+</h1>
+
+<p> o <em>draven</em> é um personagem que gira machados e <strong>mata </strong>todo mundo de um jeito muito facil</p>
+
+<p> ta na hora de dar um bom <strong>buff</strong> nos <em>adc's</em> ja que eles morrem pra qualquer coisa do jogo facilmente</p>
+
+<p> caso queira saber mais sobre o draven entre neste link abaixo:</p>
+<a href="https://www.google.com.br">Saiba mais!</a>
+
+<h1> O draven é muito bom
+    <h2>
+        vou dizer o por que o draven é muito bom!
+    </h2>
+    <h3> (só qualidade aqui tabom?)</h3>
+
+    <div title="DRAVEN MITO">
+    <img src="draven/draven.png" alt="draven lendario">
+    
+    <p> como podemos ver acima, temos um grande deus supremo vulgo <em>DRAVEN</em>, porem tem uma coisa que atrapalha elementos
+    que é esse (,) que esta ai do lado direito dele, isso nao deixa ele <strong>ENFATIZADO SABE?</strong></p>
+    <p>acho que vou ter que demitir quem fez esse paragrafo veio feio podre</p>
+    <div class="draven">
+    <a href="https://backpack.tf">
+        Clica aqui pra ver um jogo daora!
+    </a>
+<style>
+    .draven {
+        background-color: #abbaea
+    
+    }
+</style>
+</h1>
+</div>
+</div>
+
+uso do br e do &nbsp; 
+<p>
+    &nbsp; &nbsp; 
+    draven mito é mt bom sei la o que vou esqucreverawdasdqwdqwd
+    <br>
+    ai apapspdpawpdqpdpapsdpas
+    <br>
+    só tem gente boa nesse server
+</p>
+-->
+
+<!-- para usar caracteres reservados como ("", > ou <)
+    necessitamos colocar &lt(less than <) &gt(greater than >) e &quot (quote "")-->
+
+    <!-- MONTAGEM DE DOCUMENTO HTML
+    
+    <!DOCTYPE html>
+    <html>
+        <head> (configurações especiais/ usuario nao ve)
+            <meta charset="utf-8">
+            <title>ANATOMIA DO DOCUMENTO
+
+        </head>
+
+        <body>(o que o usuario vai ver)
+            <p> teu pai careca
+
+        
+            </p>
+        
+        </body>
+        </html>
+    
+    
+    -->
+
+
